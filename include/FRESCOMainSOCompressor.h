@@ -417,7 +417,7 @@ public:
             string curref=files[rand()%files.size()];
             while (curref.compare(refpathfull)==0 or forefpaths.find(curref)!=forefpaths.end())
             {
-                curref=files[abs(rand()%files.size())];
+                curref=files[(rand()%files.size())];
             }
 
             FOReference *newforef=new FOReference(cfp, l, curref);
